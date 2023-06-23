@@ -80,6 +80,7 @@ nav {
 .navbar-shopping-cart {
     position: relative;
     right: 10px;
+    cursor: pointer;
 }
 .navbar-shopping-cart div {
     width: 16px;
@@ -143,7 +144,7 @@ nav {
     position: absolute;
     background-color: var(--white);
     border-radius: 0 0 10px 0;
-    top: 44px;
+    top: 60px;
 }
 .mobile-menu a {
     text-decoration: none;
@@ -180,7 +181,6 @@ nav {
 }
 .product-card {
     width: 240px;
-
 }
 .product-card img {
     width:240px;
@@ -217,6 +217,95 @@ nav {
     color: var(--very-light-pink);
 }
 
+/* aside */
+
+.my-total {
+    width: 300px;
+    min-height: 90vh;
+    
+}
+.my-total-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    width: 350px;
+    background-color: var(--white);
+}
+.title {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: start;
+}
+.title .arrow {
+    transform: rotate(180deg);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.title p {
+    color: var(--black);
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.shopping-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+.shopping-card p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.shopping-card p:nth-child(3) {
+    color: var(--black);
+    font-weight:500;
+}
+.shopping-card figure img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.shopping-card .close {
+    width: 10px;
+    height: 10px;
+    margin: -45px;
+    cursor: pointer;
+}
+.my-total-content {
+    width: 100%;
+}
+.my-total-content .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    width: 100%;
+    background-color: var(--text-input-field);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;  
+    margin-top: 15px;
+}   
+
 @media (max-width:540px) {
     .menu {
         display: block;
@@ -242,6 +331,9 @@ nav {
         width:140px;
         height: 140px;
     }   
+    .my-total-container {
+        width: 100%;
+    }
 }
 @media (min-width:641px) {
     .mobile-menu {
