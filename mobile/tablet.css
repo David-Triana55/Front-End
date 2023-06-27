@@ -1,0 +1,26 @@
+.main-table-container{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.product-detail-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+
+}
+
+.plans-container--slider {
+    justify-content: center;
+
+}
+
+footer .left ul {
+    display: flex;
+}
+
+footer .left li {
+    margin-left: 10px;
+}
