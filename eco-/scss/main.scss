@@ -41,11 +41,15 @@ nav{
     .icons {
         display: flex;
         gap: 8px;
-        button{
+        .profile, .wishlist, .cart, .mobile-menu{
             background-color: transparent;
             border: none;
         }
-    } 
+        .mobile-menu{
+            display: none;
+        }
+    }
+     
 }
 
 
@@ -120,7 +124,9 @@ section {
         .card-section {
             position: relative;
             width: 100%;
-            @include flexCenter(row,center ,center );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             column-gap: 100px;
             row-gap: 80px;
@@ -180,7 +186,7 @@ section {
     @include flexCenter(row,space-evenly,center);
     .earth{
         @include flexCenter(row,center,center);
-        width: 500px;
+        max-width: 400px;
         
         gap: 10px;
         img{
@@ -196,7 +202,7 @@ section {
     }
     .innovation{
         @include flexCenter(row,center,center);
-        width: 500px;
+        max-width: 500px;
         font-size: 19px;
         color: #E86424;
         img{
@@ -217,7 +223,8 @@ section {
     padding-top: 40px;
 
     img{
-        width: 400px;
+        max-width: 400px;
+        min-width: 280px;
         height: 300px;
         object-fit: cover;
         object-position: 5px 35%;
@@ -260,6 +267,9 @@ footer{
     margin-top: 65px;
     color: white;
     box-sizing: border-box;
+    .p{
+        font-size: 12px;
+    }
     .social-media{
         @include flexCenter(row,center ,center);
         gap: 10px;
@@ -270,4 +280,78 @@ footer{
         }
     }
 }
+
+@media(max-width:600px) {
+    nav{
+        width: 100%;
+        .icons{
+            .desktop{
+                display: none;
+            }
+            .mobile-menu{
+                display: block;
+            }
+        }
+    }
+
+    .section-principal{
+        align-items: center;
+    }
+
+    article{
+        flex-direction: column;
+        .impact-section{
+            align-items: center;
+            order: 2;
+            h1{
+                font-size: 26px;
+                align-self: flex-start;
+            }
+        }
+        .image-section{
+            order: 1;
+            justify-content: center;
+        }
+    }
+
+    section{
+        .health-care{
+            margin-top: 30px;
+            position: relative;
+            overflow-x: scroll;
+            overscroll-behavior-x:contain;
+            scroll-snap-type:x proximity;
+            h2{
+                position: absolute;
+                top: -23px;
+            }
+            .card-section{
+                flex-wrap: nowrap;
+                justify-content: initial;
+                gap: 15px;
+            }
+        }
+    }
+
+    .mision-section{
+        flex-direction: column;
+        .earth{
+            flex-direction: column
+        }
+        .innovation{
+           flex-direction: column;
+        }
+    }
+
+    .gallery-images{
+        flex-direction: column;
+    }
+
+    footer{
+        padding-left: 10px;
+    }
+
+
+
+}    
 
