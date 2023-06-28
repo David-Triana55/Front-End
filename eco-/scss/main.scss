@@ -5,6 +5,14 @@ $quaternion-color: #fa9500;
 $primary-text-color: #7c6a0a;
 $font-stack:'IBM Plex Sans', sans-serif;
 
+@mixin flexCenter ($direction,$content,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -15,20 +23,15 @@ body {
 
 
 main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flexCenter(column,center,center);
     width: 100%;
-    align-items: center;
-
+    box-sizing: border-box;
 }
 
 nav{
     width: auto;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter(row,space-between,center);
     color: $primary-text-color;
     border-bottom: 1px solid gray;
     p{
@@ -38,26 +41,15 @@ nav{
     .icons {
         display: flex;
         gap: 8px;
-
         button{
             background-color: transparent;
-            border-style: none;
+            border: none;
         }
     } 
 }
 
 
-section {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: auto;
-    margin-top: 40px;
-    h2{
-        color: $primary-text-color;
-        font-size: 20px;
-    }
-}
+
 
 article{
     color: $primary-text-color;
@@ -86,6 +78,10 @@ article{
         font-size: 1em;
         margin-top: 20px;
         padding: auto;
+        &:hover{
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
         a{
             text-decoration: none;
             font-size: 1rem;
@@ -112,7 +108,8 @@ section {
     margin-top: 40px;
     h2{
         color: $primary-text-color;
-        font-size: 20px;
+        font-size: 26px;
+        font-weight: 500;
     }
     .health-care{
         width: 100%;
@@ -123,9 +120,7 @@ section {
         .card-section {
             position: relative;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter(row,center ,center );
             flex-wrap: wrap;
             column-gap: 100px;
             row-gap: 80px;
@@ -133,25 +128,24 @@ section {
         }
         .product-card {
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 240px;
-            min-height: 400px;
+            @include flexCenter(row,center ,center );
+            width: 232px;
+            min-height: 380px;
             border-radius: 8px;
             background-color: #ffdac6;
             color: $primary-text-color;
+            // &:hover{
+            //     transform: scale(1.1);
+            //     transition-duration: 0.3s;
+            // }
             svg{
                 position: absolute;
-                top: 5px;
-                left: 210px;
+                top: 2px;
+                left: 205px;
             }
             .product-card--info {
                 width: 240px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include flexCenter(column,center ,center);
                 padding: 20px;
             img{
                 width: 200px;
@@ -180,9 +174,100 @@ section {
     }
 }
 
-.footer{
+.mision-section{
+    padding:50px;
+    gap: 15px;
+    @include flexCenter(row,space-evenly,center);
+    .earth{
+        @include flexCenter(row,center,center);
+        width: 500px;
+        
+        gap: 10px;
+        img{
+            width: auto;
+            height: 120px
+        }
+        p{
+            font-size: 19px;
+            color: #E86424;
+            text-align: center
+        }
+    
+    }
+    .innovation{
+        @include flexCenter(row,center,center);
+        width: 500px;
+        font-size: 19px;
+        color: #E86424;
+        img{
+            width: auto;
+            height: 120px;
+        }
+        p{
+            font-size: 19px;
+            color: #E86424;
+            text-align: center
+        }
+    }
+}
+
+.gallery-images{
+    @include flexCenter(row,center,center);
+    gap: 50px;
+    padding-top: 40px;
+
+    img{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 5px 35%;
+        border-radius: 16px;
+        &:hover{
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+.location{
+    padding-top: 50px;
+    .map{
+        @include flexCenter(column,flex-start ,center);
+        padding-top: 50px;
+        padding-bottom: 15px;
+        width: 100%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 420px;
+        }
+    }
+    h3{
+        font-size: 20px;
+        color: $quaternion-color;
+    }
+    p{
+        font-size: 15px;
+        color: $quaternion-color;
+    }
+}
+
+footer{
     background-color: $quaternion-color;
     width: 100%;
-    height: 200px;
+    height: auto;
+    padding: 40px 0 0 60px;
+    margin-top: 65px;
+    color: white;
+    box-sizing: border-box;
+    .social-media{
+        @include flexCenter(row,center ,center);
+        gap: 10px;
+        padding-bottom: 40px;
+        img{
+            width: auto;
+            height: 20px;
+        }
+    }
 }
 
