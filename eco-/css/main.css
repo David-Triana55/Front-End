@@ -109,16 +109,16 @@ section .health-care h2, section .furniture h2 {
   font-size: 24px;
 }
 section .health-care .card-section, section .furniture .card-section {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  row-gap: 80px;
-  padding: 40px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+    row-gap: 80px;
+    padding: 40px 0;
 }
 section .health-care .product-card, section .furniture .product-card {
   position: relative;
@@ -220,10 +220,8 @@ section .furniture .product-card {
   max-width: 400px;
   min-width: 280px;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 5px 35%;
-     object-position: 5px 35%;
+  object-fit: cover;
+  object-position: 5px 35%;
   border-radius: 16px;
 }
 .gallery-images img:hover {
@@ -244,8 +242,7 @@ section .furniture .product-card {
   width: 100%;
 }
 .location .map img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 420px;
 }
