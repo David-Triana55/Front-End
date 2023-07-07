@@ -283,6 +283,12 @@ footer p {
   header nav .nav-logo-container img {
     margin: 0;
   }
+  .home-main section {
+    margin-top: 0;
+  }
+  .blogs-news-container {
+    padding: 0 10px 30px !important;
+  }
   .blogs-main-new {
     grid-template-columns: 1fr !important;
     grid-template-rows: 3fr !important;
@@ -298,6 +304,9 @@ footer p {
   .blogs-news-info-container {
     grid-column: 1 !important;
     grid-row: 3;
+  }
+  .blogs-main .blogs-posts-container {
+    padding: 0 0 0 !important;
   }
   .profile-main-container {
     grid-template-columns: 1fr 1fr;
