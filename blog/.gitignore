@@ -1,10 +1,6 @@
-fonts/
 ### Sass ###
 
 scss/
-
-
-assets/*.png
 
 .sass-cache/
 *.css.map
