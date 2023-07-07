@@ -306,7 +306,7 @@ footer p {
     grid-row: 3;
   }
   .blogs-main .blogs-posts-container {
-    padding: 0 0 0 !important;
+    padding: 0 !important;
   }
   .profile-main-container {
     grid-template-columns: 1fr 1fr;
