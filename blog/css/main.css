@@ -238,6 +238,11 @@ header nav .profile-link a:hover {
   background-color: #cdd2da;
   margin-bottom: 50px;
 }
+
+.profile-main-container .img{
+  width: 50%;
+}
+
 .profile-main-container img {
   min-width: 260px;
   max-width: 100%;
