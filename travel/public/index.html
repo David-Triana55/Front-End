@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Travel</title>
+</head>
+<body class="font-Montserrat">
+    <nav>
+
+    </nav>
+
+    <div id="tab_bar">
+
+    </div>
+
+    <section class="w-full h-screen">
+        <div id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <input class="rounded-full outline-none p-2 shadow-md duration-300 focus-within:shadow-md focus:ring-2 focus:w-11/12" type="search" placeholder="San Francisco">
+                    <button class=" w-48 bg-white text-lg text-primary font-semibold p-4 rounded-full shadow-md transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:translate-y-1 hover:scale-110">Explore</button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./img/sanFrancisco.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="recomendadas" class="p-20" >
+            <p class="text-3xl font-semibold text-primary">recomendados</p>
+
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex gap-x-5 overflow-y-hidden"> 
+                
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg  bg-norway bg-cover shadow-md"></div>
+                    <div class="w-full h-2/5 bg-secondary pl-3 rounded-b-lg">
+                        <p class="text-white font-bold text-xl">Norway</p>
+                        <p class="text-white text-md">Beautiful landscapes</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg  bg-new_york bg-cover shadow-md"></div>
+                    <div class="w-full h-2/5 bg-white pl-3 rounded-b-lg">
+                        <p class="text-terciary font-bold text-xl">New York</p>
+                        <p class="text-terciary text-md">Concrete jungle</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg  bg-yosemite bg-cover shadow-md"></div>
+                    <div class="w-full h-2/5 bg-secondary pl-3 rounded-b-lg">
+                        <p class="text-white font-bold text-xl">Yosemite</p>
+                        <p class="text-white text-md">A break from the world</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg  bg-seattle bg-cover shadow-md"></div>
+                    <div class="w-full h-2/5 bg-white pl-3 rounded-b-lg">
+                        <p class="text-terciary font-bold text-xl">Seattle</p>
+                        <p class="text-terciary text-md">Big City</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="w-full h-3/5 rounded-t-lg  bg-switzerland bg-cover shadow-md"></div>
+                    <div class="w-full h-2/5 bg-secondary pl-3 rounded-b-lg">
+                        <p class="text-white font-bold text-xl">switzerland</p>
+                        <p class="text-white text-md">Big City</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="rentas_destacadas" class="px-6 w-full">
+            <p class="text-3xl text-primary font-semibold pb-6 pt2 mt-6">Rentas Destacadas</p>
+            <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl ">
+                    <p class="cardTitle" >Chicago</p>
+                    <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+                </div>
+
+                <div class="w-full h-96 bg-LA bg-cover rounded-xl ">
+                    <p class="cardTitle">Los Angeles</p>
+                    <p class="text-sm pl-8 text-black mr-24">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                </div>
+
+                <div class="w-full h-96 bg-miami bg-cover rounded-xl ">
+                    <p class="cardTitle" >Miami</p>
+                    <p class="text-sm pl-8 text-black mr-24">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p>
+                </div>
+
+
+                <div class="w-full h-96 bg-bali bg-cover rounded-xl ">
+                    <p class="cardTitle" >Bali</p>
+                    <p class="text-sm pl-8 text-white mr-24">2 rooms, 2 bathrooms
+                        Kitchen and private pool.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="faqs" class="w-full h-full">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+                <div class="h-auto">
+                    <p class="text-xl font-medium text-primary">Política de Cancelación</p>
+                    <p class="text-md pt-2">
+                        Para estancias menores a una semana es importante avisar con 3 días de
+                        anticipación, de caso contario será sancionado.
+                    </p>
+                </div >
+                <div class="h-auto">
+                    <p class="text-xl font-medium text-primary">Métodos de pago</p>
+                    <p class="text-md pt-2">
+                        Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                        Paypal y Binance
+                    </p>
+                </div>
+                <div class="h-auto">
+                    <p class="text-xl font-medium text-primary">Mascotas</p>
+                    <p class="text-md pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+                </div>
+                <div class="h-auto">
+                    <p class="text-xl font-medium text-primary">Información de Seguridad</p>
+                    <p class="text-md pt-2">
+                        Todas nuestras estancias cuentan con seguro en caso de accidentes
+                    </p>
+                </div>
+                <div class="h-auto">
+                    <p class="text-xl font-medium text-primary">Estancias Largas</p>
+                    <p class="text-md pt-2 pb-8">
+                        Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                        anticipo con un monto del 50% del valor de la renta
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="w-full h-auto mt-24 p-6 space-y2 bg-gray-50">
+            <p class="text-lg pb-3">About us</p>
+            <p class="text-sm text-gray-300 pb-2">Investors</p>
+            <p class="text-sm text-gray-300 pb-2">Jobs</p>
+            <p class="text-sm text-gray-300 pb-2">Privacy policy</p> 
+            <p class="text-sm text-gray-300 pb-2">Terms and Conditions</p>
+            <p class="text-sm text-gray-300 pb-2">Follow Us </p>
+        </footer>
+    </section>
+
+
+</body>
+</html>
