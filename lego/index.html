@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <section class="container">
+
+            <nav>
+                <div class="navbar__content">
+                    <img src="./assets/lego.png" alt="">
+                    <ul>
+                        <li><a href="">Exclusivos</a></li>
+                        <li><a href="">Nuevos</a></li>
+                        <li><a href="">Gift cards</a></li>
+                        <li><a href="">Find Store</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <section class="main-content">
+                <p>Diseña tu</p>
+                <h1>Super heroe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error aliquid. Hic magni quibusdam voluptate quasi quisquam labore. Fuga, rem voluptates nobis iure fugit libero voluptatibus itaque recusandae ex quia.</p>
+                
+            </section>
+            
+            <aside>
+                <p>Superman</p>
+                <img src="./assets/super-man.png" alt="">
+            </aside>
+            
+            <footer>
+                <div class="card card1">
+                    <img src="./assets/spiderman.png" alt="" id="img">
+                </div>
+
+                <div class="card card2">
+                    <img src="./assets/robin.png" alt="" id="img">
+                </div>
+
+                <div class="card card3">
+                    <img src="./assets/batman.png" alt="" id="img">
+                </div>
+            </footer>
+            
+        </section>
+        
+        <section class="loader">
+            <div class="circle uno"></div>
+            <div class="circle dos"></div>
+            <div class="circle tres"></div>
+        </section>
+        
+        <!-- modal -->
+        <section class="modal hidden">
+            <div class="modal__content">
+                <img src="./assets/icons8-macos-close-32.png" class="close"></img>
+
+                <div class="modal__content--slider">
+                    <input type="radio" name="slider-1" id="radio-1" checked >
+                    <input type="radio" name="slider-1" id="radio-2">
+                    <input type="radio" name="slider-1" id="radio-3" >
+
+                    <div class="cards">
+                        <label for="radio-1" id="card-1" class="cartas">
+                        <img src="./assets/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="">
+                        </label>
+                        <label for="radio-2" id="card-2" class="cartas">
+                        <img src="./assets/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="">
+                        </label>
+                        <label for="radio-3" id="card-3" class="cartas">
+                        <img src="./assets/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="">
+                        </label>
+                        </div>
+                    </div>
+                    <button class="send" type="submit">Lo quiero!</button>
+            </div>
+
+        </section>
+        
+    </div>
+    </body>
+    <script>
+        let button1 = document.querySelector(".card1")
+        let button2 = document.querySelector(".card2")
+        let button3 = document.querySelector(".card3")
+        let modal = document.querySelector(".modal")
+        let cerrar = document.querySelector(".close")
+
+        
+        button1.addEventListener("click", () => {
+            modal.classList.toggle("visible")
+            console.log("here")
+        })
+
+        button2.addEventListener("click", () => {
+            modal.classList.toggle("visible")
+            console.log("here")
+        })
+
+        button3.addEventListener("click", () => {
+            modal.classList.toggle("visible")
+            console.log("here")
+        })
+        
+        cerrar.addEventListener("click", () => {
+            modal.classList.remove("visible")
+        })
+    
+        </script>
+</html>
