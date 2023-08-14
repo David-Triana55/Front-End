@@ -1,0 +1,67 @@
+.microsoft-link{
+    color: #0067b8;
+}
+
+#micro{
+    width: 100px;
+    object-fit: contain;
+    height: 40px;
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:  0;
+    right: 0;
+    background-color: rgb(0, 0,0 , 0.5);
+    color: white;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+
+.carousel-inner img{
+    object-fit: cover;
+    max-height: 70vh;
+    filter: grayscale(60%);
+}
+
+.btn-microsoft{
+    background-color: #0067b8;
+    color: white;
+}
+
+
+.btn-microsoft:hover{
+    background-color: #1196ff;
+    color: white;
+}
+
+
+#speakers .container .row .card img{
+    object-fit: cover;
+    height: 200px;
+}
+/* .col{
+    height: 70px;
+    color: white;
+} */
+.dropdown-menu{
+    background-color: #1e5472;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
