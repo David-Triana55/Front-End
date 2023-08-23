@@ -141,9 +141,9 @@ function iniciarJuego() {
         `
     contenedorTarjetas.innerHTML += opcionDeMokepones
 
-     inputHipodoge = document.getElementById('Hipodoge')
-     inputCapipepo = document.getElementById('Capipepo')
-     inputRatigueya = document.getElementById('Ratigueya')
+    inputHipodoge = document.getElementById('Hipodoge')
+    inputCapipepo = document.getElementById('Capipepo')
+    inputRatigueya = document.getElementById('Ratigueya')
 
     })
     
@@ -223,10 +223,10 @@ function mostrarAtaques(ataques) {
         contenedorAtaques.innerHTML += ataquesMokepon
     })
 
-     botonFuego = document.getElementById('boton-fuego')
-     botonAgua = document.getElementById('boton-agua')
-     botonTierra = document.getElementById('boton-tierra')
-     botones = document.querySelectorAll('.BAtaque')
+    botonFuego = document.getElementById('boton-fuego')
+    botonAgua = document.getElementById('boton-agua')
+    botonTierra = document.getElementById('boton-tierra')
+    botones = document.querySelectorAll('.BAtaque')
 }
 
 function secuenciaAtaque() {
